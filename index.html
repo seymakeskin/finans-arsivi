@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Finans Arşivi</title>
+</head>
+
+<body class="bg-light">
+    <div class="page-wrapper">
+        <!-- Nav -->
+        <header class="bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light  container-xl py-3">
+                <a href="index-html"> <img src="/images/fa_logo 1.png" alt="Logo"></a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span> <img src="images/icon/Vector (1).png" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between mt-2" id="navbarSupportedContent">
+                    <ul class=" navbar-nav d-flex justify-content-around mr-lg-auto ml-lg-auto">
+                        <li class="nav-item active">
+                            <a href="index.html"> Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Ekonomi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Borsa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Döviz </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Altın</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Hisse </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"> Kobi</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 border border-dark rounded d-inline-block">
+                        <button class="btn border-dark my-2 my-sm-0 border-0 " type="submit">
+                            <img src="/images/icon/Vector.png" alt="" style="height: 25px; ">
+                        </button>
+                        <input type="text" class="form-control border-dark  border-0 d-inline-block w-50"
+                            placeholder="Search.." aria-label="search" aria-describedby="basic-addon1">
+                    </form>
+                </div>
+            </nav>
+            <div class="bg-light">
+                <div class="container-xl ">
+
+                    <div class="swiper-container s2 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  ">
+                                <ul class="tickers d-flex justify-content-around p-0 doviz-table">
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">Dolar</a>
+                                            <span>8.2808</span>
+                                        </div>
+                                    </li>
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">Euro</a>
+                                            <span>10.0144</span>
+                                        </div>
+                                    </li>
+                                  
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">Sterlin</a>
+                                            <span>11.5289</span>
+                                        </div>
+                                    </li>
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">BIST100</a>
+                                            <span>1433.48</span>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide ">
+                                <ul class="doviz-table  d-flex justify-content-around p-0">
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">DOW</a>
+                                            <span>34230.34</span>
+                                        </div>
+                                    </li>
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">DAX</a>
+                                            <span>15196.74</span>
+                                        </div>
+                                    </li>
+                                   
+                                    <li class="float-left"><i class="icon-down"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">İsviçre Frangı</a>
+                                            <span>9.1211</span>
+                                        </div>
+                                    </li>
+                                    <li class="float-left"><i class="icon-up"></i>
+                                        <div class="d-inline-block"><a href="#" class="d-block">Bono</a>
+                                            <span>17,94</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <!-- Add Navigation -->
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </header>
+
+
+        <!-- Son Haber Carousel-->
+        <div class="container-xl">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row position-relative ">
+                            <div class="col-lg-6 col-md-5 mt-md-5 col-12 ">
+                                <a href="post.html" class="stretched-link"><img src="/images/ressssim 1.png" alt=""
+                                        class="w-100"></a>
+                            </div>
+                            <div class=" col-lg-6 col-md-7 p-5 ">
+                                <div class="share-content text-right">
+                                    <span class="float-left red-headline">Finans</span>
+                                    <div class="share-content">
+                                        <img src="/images/icon/fav.png" alt="" class="mr-1">
+                                        <img src="/images/icon/share.png" alt="" class="mr-1">
+                                        <img src="/images/icon/sub.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="headline-carousel">
+                                    <a href="post.html" class="h2 ">İş Kuracak Kadınlara 2021 Devlet
+                                        Destekleri</a>
+                                </div>
+                                <div class="d-none d-lg-block d-md-block">
+
+                                    <div class="pt-3">
+                                        <p class="font-weight-light">
+                                            İş kurmak isteyen kadın Kosgeb tarafından 2021 yılında da farklı sektörlere
+                                            destek veriliyor. Bu yazımızda sizler için Kosgeb desteklerinden, yeni iş
+                                            kuranlara verilen devlet desteklerinden, verilen 300 bin TL kredi faiz
+                                            desteğinin şartlarından ve e Kosgeb kira desteğinden bahsedeceğiz. İş
+                                            kuranlara verilen destekler ile alakalı tüm detaylar içeriğimiz de..
+                                        </p>
+                                    </div>
+                                    <div class="news-time">
+                                        <span class="font-weight-lighter">
+                                            1 ay önce
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Son Haber-->
+        <div class="container-xl">
+            <div class=" bg-danger  mt-lg-2 mt-3 p-3 rounded " role="alert">
+                <div class="float-left">
+                    <span class="p-3 bg-white"> Son Haber </span>
+                </div>
+                <div class="text-center">
+                    <span class="text-white">Tekstil ve Hazır Giyim Sektörü Dünya İhracat Rakamları</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tablo ve postlar-->
+        <div class="container-xl">
+            <div class="row">
+                <!-- Postlar-->
+                <div class="col-lg-9 col-md-9 col-12 article-posts">
+                    <ul class="nav nav-pills mb-3 bg-white py-2" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Ekonomi</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Borsa</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Döviz</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/doviz 1.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Döviz alım satım için en iyi banka hangisi 2020
+                                                    en az para kesen konusu olan banka
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda
+                                                    aniden fiyat değişimi nedeniyle birçok kişi artık banka üzerinden
+                                                    döviz alım satım işi yaparak para kazanma işine girdi.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12 ">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/sgk 1.png" alt=""
+                                                        class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Sigortalı çalışan vatandaşlarımızın çalışmadıkları dönemlere alması
+                                                    gereken rapor paraları bulunmaktadır. Rapor paralarını öğrenmek
+                                                    isteyenler ya da ne kadar yatacak ne zaman yatacak sorularına cevap
+                                                    olmak isteyenler Türkiye Cumhuriyeti kimlik numaraları ile rapor
+                                                    parası sorgulayabilirler.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/image 47.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    The body of the late US Rep. John Lewis on Sunday will make the
+                                                    final journey across the famous bridge in Selma, Alabama, where he
+                                                    helped lead a march for voting rights in 1965.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/Mask Group.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Tornado and tide warnings as Storm Hanna lashes
+                                                    Texas
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    This month marks the 20th anniversary of the Power Mac G4 Cube,
+                                                    which debuted July 19, 2000. It also marks the 19th anniversary of
+                                                    Apple’s announcement that it was putting the Cube on ice.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/image 47.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    The body of the late US Rep. John Lewis on Sunday will make the
+                                                    final journey across the famous bridge in Selma, Alabama, where he
+                                                    helped lead a march for voting rights in 1965.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/Mask Group.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Tornado and tide warnings as Storm Hanna lashes
+                                                    Texas
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    This month marks the 20th anniversary of the Power Mac G4 Cube,
+                                                    which debuted July 19, 2000. It also marks the 19th anniversary of
+                                                    Apple’s announcement that it was putting the Cube on ice.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/doviz 1.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Döviz alım satım için en iyi banka hangisi 2020
+                                                    en az para kesen konusu olan banka
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda
+                                                    aniden fiyat değişimi nedeniyle birçok kişi artık banka üzerinden
+                                                    döviz alım satım işi yaparak para kazanma işine girdi.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/sgk 1.png" alt=""
+                                                        class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Sigortalı çalışan vatandaşlarımızın çalışmadıkları dönemlere alması
+                                                    gereken rapor paraları bulunmaktadır. Rapor paralarını öğrenmek
+                                                    isteyenler ya da ne kadar yatacak ne zaman yatacak sorularına cevap
+                                                    olmak isteyenler Türkiye Cumhuriyeti kimlik numaraları ile rapor
+                                                    parası sorgulayabilirler.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/image 47.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    The body of the late US Rep. John Lewis on Sunday will make the
+                                                    final journey across the famous bridge in Selma, Alabama, where he
+                                                    helped lead a march for voting rights in 1965.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/sgk 1.png" alt=""
+                                                        class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">T.C. numarası ile iş göremezlik rapor parası
+                                                    sorgulama
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Sigortalı çalışan vatandaşlarımızın çalışmadıkları dönemlere alması
+                                                    gereken rapor paraları bulunmaktadır. Rapor paralarını öğrenmek
+                                                    isteyenler ya da ne kadar yatacak ne zaman yatacak sorularına cevap
+                                                    olmak isteyenler Türkiye Cumhuriyeti kimlik numaraları ile rapor
+                                                    parası sorgulayabilirler.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/Mask Group.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Tornado and tide warnings as Storm Hanna lashes
+                                                    Texas
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    This month marks the 20th anniversary of the Power Mac G4 Cube,
+                                                    which debuted July 19, 2000. It also marks the 19th anniversary of
+                                                    Apple’s announcement that it was putting the Cube on ice.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="card">
+                                        <div class="card-body p-0">
+                                            <div class="card-img">
+                                                <a href="#" class="stretched-link"> <img src="/images/doviz 1.png"
+                                                        alt="" class="w-100"></a>
+                                            </div>
+                                            <div class="card-text  p-4">
+                                                <span class="post-title">Döviz alım satım için en iyi banka hangisi 2020
+                                                    en az para kesen konusu olan banka
+                                                </span>
+                                                <p class="article-text py-2">
+                                                    Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda
+                                                    aniden fiyat değişimi nedeniyle birçok kişi artık banka üzerinden
+                                                    döviz alım satım işi yaparak para kazanma işine girdi.
+                                                </p>
+                                                <span class="date">
+                                                    2 Ay önce..
+                                                </span>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-center">
+                                                <a href="#"> <img src="images/icon/fav.png" alt=""> 28 </a>
+                                                <a href="#"> <img src="images/icon/share.png" alt=""> 72</a>
+                                                <a href="#"> <img src="images/icon/sub.png" alt=""></a>
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Postlar-->
+                <!-- Borsa Tablo-->
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div>
+                        <table>
+                            <thead>
+                                <th> Döviz Cinsi </th>
+                                <th>Alış</th>
+                                <th>Satış</th>
+                                <th>Değişim</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cins">Abd Doları</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Euro</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İngiliz Sterlini</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İsviçre Frangı</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Norveç Kronu</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Abd Doları</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Euro</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İngiliz Sterlini</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <th> Döviz Cinsi </th>
+                                <th>Alış</th>
+                                <th>Satış</th>
+                                <th>Değişim</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cins">Abd Doları</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Euro</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İngiliz Sterlini</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İsviçre Frangı</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Norveç Kronu</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Abd Doları</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">Euro</td>
+                                    <td class="up">8,2514</td>
+                                    <td class="down">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+                                <tr>
+                                    <td class="cins">İngiliz Sterlini</td>
+                                    <td class="down">8,2514</td>
+                                    <td class="up">8,2578</td>
+                                    <td class="diffrence">0,67%</td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div>
+
+
+                    </div>
+                </div>
+                <!-- Borsa Tablo-->
+            </div>
+        </div>
+
+
+        <!-- Slider-->
+        <div class="container-xl pt-5">
+            <!-- Slider main container -->
+            <div class="swiper-container s1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-img ">
+                                        <a href="#">
+                                            <img src="/images/image 47.png" alt="" width="100%">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-headline">
+                                    <span class="h6"> Döviz alım satım için en iyi banka hangisi 2020 en az para kesen
+                                        konusu olan banka
+                                    </span>
+                                </div>
+                                <div class="card-text">
+
+                                    <p>Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda aniden fiyat
+                                        değişimi nedeniylex</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-img ">
+                                        <a href="#">
+                                            <img src="/images/doviz 1.png" alt="" width="100%">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-headline">
+                                    <span class="h6"> Döviz alım satım için en iyi banka hangisi 2020 en az para kesen
+                                        konusu olan banka
+                                    </span>
+                                </div>
+                                <div class="card-text">
+
+                                    <p>Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda aniden fiyat
+                                        değişimi nedeniylex</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-img ">
+                                        <a href="#">
+                                            <img src="/images/ressssim 1.png" alt="" width="100%">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-headline">
+                                    <span class="h6"> Döviz alım satım için en iyi banka hangisi 2020 en az para kesen
+                                        konusu olan banka
+                                    </span>
+                                </div>
+                                <div class="card-text">
+
+                                    <p>Türkiye’de doların, euronun sürekli yükselmesi ve en basit olayda aniden fiyat
+                                        değişimi nedeniylex</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination1"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="bg-white p-5 mt-3">
+            <a href="index.html" class="d-flex justify-content-center">
+                <img src="/images/fa_logo 1.png" alt="">
+            </a>
+        </footer>
+        <!-- Footer-->
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper('.s1 ', {
+            // Optional parameters
+
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1, // ileri geri yani /slides kaydırıldıgında kaç tane gideceği
+
+                },
+
+                760: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+
+                }
+
+
+            },
+
+            // And if we need scrollbar
+
+        });
+        var swiper = new Swiper('.s2', {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1, // ileri geri yani /slides kaydırıldıgında kaç tane gideceği
+
+                },
+
+
+                1090: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 1,
+
+
+                }
+
+
+
+            },
+
+        });
+    </script>
+</body>
+
+</html>
