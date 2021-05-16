@@ -47,9 +47,6 @@ header{
             }
         }
          
-          
-        
-
         li i.icon-up::before{
             content: url("/images/icon/up.png");
          }
@@ -109,6 +106,8 @@ header{
         .article-text{
             font-weight: 300;
             font-size: 14px;
+            max-height: 158px;
+            min-height: 140px;
         }
        }
        
@@ -134,18 +133,22 @@ header{
     color: white;
 }
 
-table{
+.table-tickers{
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 548px;
+    max-height: 348px;
     
     thead{
       border-bottom: 0.5px solid #C31815 ;
       font-size: 17px;
+      th{
+          padding: 13px;
+      }
     }
     tbody{
        tr{
            border-bottom: 0.5px solid #C0C0C0;
+           padding: 10px;
        }
       .cins{
           color: black;

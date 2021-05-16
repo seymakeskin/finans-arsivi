@@ -97,6 +97,8 @@ header .doviz-table li i.icon-down::before {
 .article-posts article .card-text .article-text {
   font-weight: 300;
   font-size: 14px;
+  max-height: 158px;
+  min-height: 140px;
 }
 
 .article-posts article .date {
@@ -121,36 +123,41 @@ header .doviz-table li i.icon-down::before {
   color: white;
 }
 
-table {
+.table-tickers {
   background-color: white;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  height: 548px;
+  max-height: 348px;
 }
 
-table thead {
+.table-tickers thead {
   border-bottom: 0.5px solid #C31815;
   font-size: 17px;
 }
 
-table tbody tr {
-  border-bottom: 0.5px solid #C0C0C0;
+.table-tickers thead th {
+  padding: 13px;
 }
 
-table tbody .cins {
+.table-tickers tbody tr {
+  border-bottom: 0.5px solid #C0C0C0;
+  padding: 10px;
+}
+
+.table-tickers tbody .cins {
   color: black;
   font-weight: 600;
 }
 
-table tbody .up {
+.table-tickers tbody .up {
   color: #3CB371;
 }
 
-table tbody .down {
+.table-tickers tbody .down {
   color: #C31815;
 }
 
-table tbody .diffrence {
+.table-tickers tbody .diffrence {
   color: #006400;
 }
 
