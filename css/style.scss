@@ -11,6 +11,7 @@ body{
 }
 
 header{
+   
     nav{
   
         font-family: 'Nunito Sans', sans-serif;
@@ -23,11 +24,14 @@ header{
                 list-style-type: none;
                 font-weight: 300;
                 font-size: 17px;
+                text-align: center;
                 a{
+                    display: block;
                     color: #2A2A2A;
                 }
             }
         }
+      
     }
     .doviz-table{
         list-style-type: none;
@@ -66,6 +70,7 @@ header{
 
 
 .article-posts{
+    
    ul{
        height: 54px;
        .nav-item{
@@ -92,6 +97,7 @@ header{
        }
    }
    article{
+    margin-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    
        .post-title{
@@ -137,16 +143,17 @@ header{
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     max-height: 348px;
+    margin-bottom: 25px;
     
     thead{
       border-bottom: 0.5px solid #C31815 ;
       font-size: 17px;
       th{
           padding: 13px;
-      }
+       }
     }
     tbody{
-       tr{
+       td{
            border-bottom: 0.5px solid #C0C0C0;
            padding: 10px;
        }
@@ -171,20 +178,35 @@ header{
     .nav-container{
         justify-content: space-between;
     }
-   
+    .navbar-nav{
+        width: 80%!important;
+
+    }
+    .doviz-table{
+        justify-content: space-evenly;
+    }
+
     
 }
 
 
 @media(max-width:960px){
-    body{
-      background-color: red!important;
-    }
-    
-    .tickers{
+  
+      .tickers{
         max-width: 100%;
      overflow-x: scroll;
     }
+    .navbar-nav{
+        width: 100%!important;
+       li{
+           margin-bottom: 5px;
+       }
+    }
+    
+    .doviz-table{
+        justify-content: space-between;
+    }
+   
    
 }
 
@@ -194,3 +216,10 @@ header{
         top:50%;
     }
 }
+
+@media(max-width:460px){
+   nav{
+       background-color: red!important;
+   }
+}
+

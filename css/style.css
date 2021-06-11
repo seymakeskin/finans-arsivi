@@ -23,9 +23,11 @@ header nav ul li {
   list-style-type: none;
   font-weight: 300;
   font-size: 17px;
+  text-align: center;
 }
 
 header nav ul li a {
+  display: block;
   color: #2A2A2A;
 }
 
@@ -82,6 +84,7 @@ header .doviz-table li i.icon-down::before {
 }
 
 .article-posts article {
+  margin-bottom: 10px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -128,6 +131,7 @@ header .doviz-table li i.icon-down::before {
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-height: 348px;
+  margin-bottom: 25px;
 }
 
 .table-tickers thead {
@@ -139,7 +143,7 @@ header .doviz-table li i.icon-down::before {
   padding: 13px;
 }
 
-.table-tickers tbody tr {
+.table-tickers tbody td {
   border-bottom: 0.5px solid #C0C0C0;
   padding: 10px;
 }
@@ -167,15 +171,31 @@ header .doviz-table li i.icon-down::before {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .navbar-nav {
+    width: 80% !important;
+  }
+  .doviz-table {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 960px) {
-  body {
-    background-color: red !important;
-  }
   .tickers {
     max-width: 100%;
     overflow-x: scroll;
+  }
+  .navbar-nav {
+    width: 100% !important;
+  }
+  .navbar-nav li {
+    margin-bottom: 5px;
+  }
+  .doviz-table {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -183,6 +203,12 @@ header .doviz-table li i.icon-down::before {
   .headline-carousel {
     position: absoulte !important;
     top: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+  nav {
+    background-color: red !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
