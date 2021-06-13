@@ -173,6 +173,16 @@ header{
     }
 }
 
+.swiper-slide{
+    .card-img img{
+        max-height: 125px;
+        object-fit: cover;
+        object-position: top;
+        margin-top: 10px;
+       
+    }
+}
+
 //media query
 @media(min-width:960px){
     .nav-container{
@@ -212,8 +222,17 @@ header{
 
 @media(max-width:760px){
     .headline-carousel{ 
-        position: absoulte!important;
-        top:50%;
+        position: absolute;
+        z-index: 10000;
+        
+        padding: 10px 50px;
+        /* background-color: red; */
+        top: -100px;
+        a{
+           
+            color: white;
+           
+        }
     }
 }
 

@@ -165,6 +165,15 @@ header .doviz-table li i.icon-down::before {
   color: #006400;
 }
 
+.swiper-slide .card-img img {
+  max-height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-top: 10px;
+}
+
 @media (min-width: 960px) {
   .nav-container {
     -webkit-box-pack: justify;
@@ -201,8 +210,14 @@ header .doviz-table li i.icon-down::before {
 
 @media (max-width: 760px) {
   .headline-carousel {
-    position: absoulte !important;
-    top: 50%;
+    position: absolute;
+    z-index: 10000;
+    padding: 10px 50px;
+    /* background-color: red; */
+    top: -100px;
+  }
+  .headline-carousel a {
+    color: white;
   }
 }
 
