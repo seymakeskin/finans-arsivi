@@ -62,6 +62,16 @@ header{
 
 }
 
+.carousel-control-prev span, .carousel-control-next span{ 
+   background-color: #DC3C45;;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 2%!important;
+}
+.headline-carousel a{
+    color: #333333;
+}
+
 
 .alert{
     width: 84%;
@@ -97,40 +107,40 @@ header{
        }
    }
    article{
+   
     margin-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    
-       .post-title{
+       .card-title{
+        display: block;
+        padding: 5px 10px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 27px;
         font-family: 'IBM Plex Serif', serif;
+        margin-bottom: 0px!important;
        }
        .card-text{
-       
+           padding: 10px;
         .article-text{
             font-weight: 300;
             font-size: 14px;
-            max-height: 158px;
-            min-height: 140px;
-        }
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            
        }
+
+       } 
        
        .date{
            font-size: 15px;
            font-weight: 200;
        }
    }
-   .card-footer{
-       background-color: white;
-       a{
-           margin-right: 30px;
-           font-size: 14px;
-           text-decoration: none;
-           color:#2A2A2A;
-       }
-   }
+
 
 }
 .img-overlay-text{
@@ -174,6 +184,8 @@ header{
 }
 
 .swiper-slide{
+   
+    padding-right: 10px;
     .card-img img{
         max-height: 125px;
         object-fit: cover;
@@ -195,6 +207,12 @@ header{
     .doviz-table{
         justify-content: space-evenly;
     }
+    .article-posts article{
+        min-height: 391px;
+        max-height: 391px;
+    }
+   
+   
 
     
 }
@@ -202,7 +220,7 @@ header{
 
 @media(max-width:960px){
   
-      .tickers{
+    .tickers{
         max-width: 100%;
      overflow-x: scroll;
     }
@@ -216,6 +234,11 @@ header{
     .doviz-table{
         justify-content: space-between;
     }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%!important;
+    }
+   
    
    
 }
@@ -234,6 +257,7 @@ header{
            
         }
     }
+    
 }
 
 @media(max-width:460px){

@@ -55,6 +55,18 @@ header .doviz-table li i.icon-down::before {
   content: url("/images/icon/down.png");
 }
 
+.carousel-control-prev span, .carousel-control-next span {
+  background-color: #DC3C45;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 2% !important;
+}
+
+.headline-carousel a {
+  color: #333333;
+}
+
 .alert {
   width: 84%;
   background-color: #C31815;
@@ -89,35 +101,33 @@ header .doviz-table li i.icon-down::before {
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.article-posts article .post-title {
+.article-posts article .card-title {
+  display: block;
+  padding: 5px 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 27px;
   font-family: 'IBM Plex Serif', serif;
+  margin-bottom: 0px !important;
+}
+
+.article-posts article .card-text {
+  padding: 10px;
 }
 
 .article-posts article .card-text .article-text {
   font-weight: 300;
   font-size: 14px;
-  max-height: 158px;
-  min-height: 140px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .article-posts article .date {
   font-size: 15px;
   font-weight: 200;
-}
-
-.article-posts .card-footer {
-  background-color: white;
-}
-
-.article-posts .card-footer a {
-  margin-right: 30px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #2A2A2A;
 }
 
 .img-overlay-text {
@@ -165,6 +175,10 @@ header .doviz-table li i.icon-down::before {
   color: #006400;
 }
 
+.swiper-slide {
+  padding-right: 10px;
+}
+
 .swiper-slide .card-img img {
   max-height: 125px;
   -o-object-fit: cover;
@@ -188,6 +202,10 @@ header .doviz-table li i.icon-down::before {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .article-posts article {
+    min-height: 391px;
+    max-height: 391px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -205,6 +223,9 @@ header .doviz-table li i.icon-down::before {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 10% !important;
   }
 }
 
